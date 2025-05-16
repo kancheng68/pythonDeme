@@ -51,5 +51,12 @@ set1.update({2,34,6})
 set1.add('1')
 print(set1)
 
+dic1={'a','b','c'}
+
+dic2={}
+print(set1 and dic1 and dic2)
+
+
+
 
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
