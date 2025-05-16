@@ -45,9 +45,10 @@ TEMPLATE_B = "life is {s}, you need {p}"
 #     print(dict1[k])
 
 
-set1 = {1, 2, 3}
+set1 = {1, 2, 3,'a'}
 
 set1.update({2,34,6})
+set1.add('1')
 print(set1)
 
 
