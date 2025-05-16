@@ -3,8 +3,15 @@
 # 按 Shift+F10 执行或将其替换为您的代码。
 # 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
 
+# pylint: disable=invalid-name
+
 
 def print_hi(name):
+    """
+    返回一个问候信息。
+    返回:
+        name: 问候信息。
+    """
     # 在下面的代码行中使用断点来调试脚本。
     print(f'Hi, {name}')  # 按 Ctrl+F8 切换断点。
 
@@ -13,6 +20,35 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
 
-print("1222")
+
+print('special string: \', ", \\, \\\\, \\n, \\t')
+print(r'''
+'\"To be, or not to be\": that is the question.\nWhether it\'s nobler in the mind to suffer.'
+''')
+
+
+# 作为变量（推荐）
+
+template = "life is {0}, you need {1}"
+print(template.format('short', 'Python'))
+
+template = "life is {s}, you need {p}"  # 明确重新赋值
+print(template.format(s='short', p='Python'))
+
+# 作为逻辑常量
+TEMPLATE_A = "life is {0}, you need {1}"
+TEMPLATE_B = "life is {s}, you need {p}"
+
+# dict1={'aa':1,'bb':2}
+#
+# for k in dict1:
+#     print(dict1[k])
+
+
+set1 = {1, 2, 3}
+
+set1.update({2,34,6})
+print(set1)
+
 
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
