@@ -1,4 +1,9 @@
-# 这是一个示例 Python 脚本。
+"""
+练习视频中的知识点
+"""
+
+import ast
+
 
 # 按 Shift+F10 执行或将其替换为您的代码。
 # 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
@@ -59,4 +64,13 @@ print(set1 and dic1 and dic2)
 
 
 
+num = 3.14159
+result = float(f"{num:.3f}")
+print(isinstance(result,float))
+
+str1="[1,2,3,4]"
+print(ast.literal_eval(str1))
+
+t1=(1,2,3,4)
+print(t1,type(t1))
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
